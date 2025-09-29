@@ -1,0 +1,66 @@
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 0px;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a,
+.sidebar nav ul li button {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li button:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #f4f6f8;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .admin-content {
+    padding: 20px;
+  }
+}

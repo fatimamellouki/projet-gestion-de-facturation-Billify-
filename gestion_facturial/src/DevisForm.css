@@ -1,0 +1,92 @@
+.devis-form-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.devis-form-container h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.devis-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+  font-weight: 500;
+}
+
+.devis-form-container input,
+.devis-form-container select,
+.devis-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.devis-form-container input:focus,
+.devis-form-container select:focus,
+.devis-form-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.ligne-devis {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.ligne-devis button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ligne-devis button:hover {
+  background-color: #c82333;
+}
+
+.btn-ajouter-ligne,
+.btn-enregistrer-devis {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn-ajouter-ligne {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-ajouter-ligne:hover {
+  background-color: #218838;
+}
+
+.btn-enregistrer-devis {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-enregistrer-devis:hover {
+  background-color: #0056b3;
+}

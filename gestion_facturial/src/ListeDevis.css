@@ -1,0 +1,45 @@
+.liste-devis-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.liste-devis-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table-devis {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-devis thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.table-devis th,
+.table-devis td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-devis tbody tr:hover {
+  background-color: #f2f2f2;
+  transition: 0.2s ease-in-out;
+}
+
+.table-devis td {
+  font-size: 14px;
+  color: #555;
+}

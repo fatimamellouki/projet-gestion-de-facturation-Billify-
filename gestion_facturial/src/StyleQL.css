@@ -1,0 +1,15 @@
+/* Supprime puces classiques sauf bullet */
+.ql-editor ul:not(.ql-bullet) {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+/* Affiche un ✓ devant chaque <li class="ql-check"> */
+.ql-editor li.ql-check::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

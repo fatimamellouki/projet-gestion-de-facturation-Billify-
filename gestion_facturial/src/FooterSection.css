@@ -1,0 +1,211 @@
+:root {
+  --color-bg: #ffffff; /* fond clair au lieu de sombre */
+  --color-text: #1f2937; /* gris foncé moderne */
+  --color-accent: #2563eb; /* bleu principal */
+  --color-muted: #6b7280; /* gris clair */
+  --color-border: #e5e7eb; /* bordure claire */
+  --color-hover-link: #1e40af; /* bleu foncé pour hover */
+}
+
+.footer {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 3rem 1rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: inset 0 10px 15px -10px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  padding: 0 1rem;
+}
+
+/* Brand */
+.footer-brand {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-logo {
+  border: 3px solid var(--color-accent);
+  border-radius: 50%;
+  max-width: 140px;
+  background-color: var( --color-accent);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 25px var(--color-accent);
+  outline: none;
+}
+
+.footer-description {
+  line-height: 1.6;
+  opacity: 0.95;
+  font-size: 1rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Contact */
+.footer-contact {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.contact-list li {
+  margin-bottom: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.contact-list li:hover,
+.contact-list li:focus-within {
+  color: var(--color-accent);
+}
+
+.contact-icon {
+  color: var(--color-accent);
+  min-width: 22px;
+  text-align: center;
+}
+
+/* Social */
+.footer-social {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icons a {
+  color: var(--color-accent);
+  background-color: #f3f4f6;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+  background-color: var(--color-accent);
+  color: #fff;
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+  outline: none;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.7rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  user-select: text;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--color-accent);
+  outline: none;
+}
+
+.footer-links span {
+  color: var(--color-border);
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand,
+  .footer-contact,
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-list li {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

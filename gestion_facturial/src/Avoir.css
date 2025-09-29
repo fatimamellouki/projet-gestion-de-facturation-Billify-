@@ -1,0 +1,52 @@
+.avoir-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.avoir-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.avoir-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.avoir-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.avoir-table th,
+.avoir-table td {
+  padding: 14px 18px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.avoir-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.avoir-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+.avoir-container p {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+  margin-top: 30px;
+}

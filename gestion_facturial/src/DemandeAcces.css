@@ -1,0 +1,70 @@
+.demande-container {
+  max-width: 100%;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.demande-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #064bec;
+}
+
+.demande-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.demande-container input,
+.demande-container textarea {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.demande-container input:focus,
+.demande-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.demande-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.demande-container button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.demande-container button:hover {
+  background-color: #0056b3;
+}
+
+.demande-container p {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.demande-container .error {
+  color: red;
+}
+
+.demande-container .success {
+  color: green;
+}

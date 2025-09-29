@@ -1,0 +1,71 @@
+.avoir-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.avoir-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.avoir-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 600;
+}
+
+.avoir-form input,
+.avoir-form textarea,
+.avoir-form select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.avoir-form input:focus,
+.avoir-form textarea:focus,
+.avoir-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.avoir-form textarea {
+  resize: vertical;
+}
+
+.avoir-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.avoir-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #f5c6cb;
+  font-size: 0.95rem;
+}

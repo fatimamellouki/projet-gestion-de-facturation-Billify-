@@ -1,0 +1,249 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1e40af;
+  --text-dark: #1b263b;
+  --text-light: #f8f9fa;
+  --gray: #e5e7eb;
+  --error: #f87171;
+}
+
+/* BASE */
+.all {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--text-light), var(--gray));
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* CONTAINER */
+.inscription-container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* LOGO SECTION */
+.logo-container {
+  background: var(--primary-hover);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+.logoinscription {
+  width: 120px;
+  height: 120px;
+  background: var(--primary-hover);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logoinscription img {
+  width: 80px;
+  height: auto;
+}
+
+.welcome-text {
+  text-align: center;
+}
+
+.welcome-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.welcome-text h2 span {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.welcome-text p {
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* FORM SECTION */
+.form-section {
+  padding: 40px;
+  flex: 1;
+}
+
+.inscription-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: var(--text-dark);
+}
+
+.inscription-title h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.inscription-title i {
+  font-size: 1.5rem;
+  color: var(--primary-hover);
+}
+
+/* FORM LAYOUT */
+.inscription-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  background: white;
+}
+
+/* SELECT ARROW */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 1em;
+}
+
+/* BUTTON */
+button {
+  grid-column: span 2;
+  padding: 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ACCESSIBILITÉ */
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline-offset: 2px;
+}
+
+/* ERREURS */
+input:invalid {
+  border-color: var(--error);
+}
+
+.error-message {
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-top: 5px;
+  display: none;
+}
+
+input:invalid + .error-message {
+  display: block;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+  .inscription-container {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  .inscription-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  button {
+    grid-column: span 1;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 480px) {
+  .form-section {
+    padding: 20px;
+  }
+
+  .inscription-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .logoinscription img {
+    width: 60px;
+  }
+
+  label, input, select, button {
+    font-size: 0.9rem;
+  }
+}

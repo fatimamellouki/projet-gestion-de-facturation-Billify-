@@ -1,0 +1,95 @@
+/* AdminLayout.css */
+.admin-layout-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+}
+
+.admin-layout-content {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 250px; /* Largeur de la sidebar */
+  transition: margin-left 0.3s ease;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+/* Animation pour quand la sidebar est réduite */
+.sidebar-admin.collapsed ~ .admin-layout-content {
+  margin-left: 60px;
+}
+
+/* Header de la page */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .admin-layout-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-layout-content {
+    margin-left: 60px;
+    padding: 1rem;
+  }
+  
+  .sidebar-admin:not(.collapsed) ~ .admin-layout-content {
+    margin-left: 250px;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-layout-content {
+    margin-left: 0;
+    padding: 0.75rem;
+  }
+  
+  .sidebar-admin:not(.collapsed) ~ .admin-layout-content {
+    display: none;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* Scrollbar stylisée pour le contenu principal */
+.admin-layout-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-layout-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.admin-layout-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.admin-layout-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

@@ -1,0 +1,66 @@
+ .features-section {
+          background-color: #f9fafb;
+        }
+        
+        .dark .features-section {
+          background-color: #111827;
+        }
+        
+        .card-feature {
+          position: relative;
+          overflow: hidden;
+          height: 100%;
+        }
+        
+        .card-feature img {
+          transition: transform 0.5s ease;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        
+        .card-feature:hover img {
+          transform: scale(1.05);
+        }
+        
+        .card-overlay {
+          position: absolute;
+          inset: 0;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: all 0.3s ease;
+          padding: 1.5rem;
+          text-align: center;
+        }
+        
+        .card-feature:hover .card-overlay {
+          opacity: 1;
+        }
+        
+        @media (min-width: 768px) {
+          .md\:grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+        
+        @media (min-width: 1024px) {
+          .lg\:grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+        
+        
+.features-grid > div:nth-child(2n) {
+  margin-top: 40px; /* الكارتات الزوجية هابطة شوية */
+}
+.features-carousel .flex {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

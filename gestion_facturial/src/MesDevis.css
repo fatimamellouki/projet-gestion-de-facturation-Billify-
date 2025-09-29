@@ -1,0 +1,94 @@
+.devis-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.devis-container h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #343a40;
+}
+
+.table-devis {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.table-devis thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-devis th,
+.table-devis td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.table-devis tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-devis tbody tr:hover {
+  background-color: #eef2f5;
+}
+
+/* --- Buttons --- */
+.table-devis button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* button:nth-child(1) {
+  background-color: #17a2b8;
+  color: white;
+} */
+
+/* button:nth-child(2) {
+  background-color: #28a745;
+  color: white;
+} */
+/* 
+button:nth-child(3) {
+  background-color: #dc3545;
+  color: white;
+} */
+
+/* État styling */
+td:last-child {
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-devis th, .table-devis td {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .devis-container {
+    padding: 20px;
+  }
+}

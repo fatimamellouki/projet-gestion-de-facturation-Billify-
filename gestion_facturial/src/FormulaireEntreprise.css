@@ -1,0 +1,58 @@
+.entreprise-form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #fdfdfd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.entreprise-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.entreprise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.entreprise-form input,
+.entreprise-form textarea,
+.entreprise-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.entreprise-form input:focus,
+.entreprise-form textarea:focus,
+.entreprise-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.entreprise-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-save {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-save:hover {
+  background-color: #2980b9;
+}
